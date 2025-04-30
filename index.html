@@ -406,9 +406,26 @@
     </section>
 
     <section class="section contact text-center">
-        <h2 class="text-2xl font-semibold mb-4">Kontakt</h2>
-        <p>Vid frågor, kontakta mig på: <a href="mailto:mans.lakalle2@gmail.com" class="text-orange-500 hover:underline">mans.lakalle2@gmail.com</a></p>
-    </section>
+    <h2 class="text-2xl font-semibold mb-4">Kontakt</h2>
+    <p>Vid frågor, fyll i formuläret nedan så hör jag av mig:</p>
+    <form action="https://formspree.io/f/xeogepzd" method="POST" class="mt-4">
+        <input type="hidden" name="_to" value="mans.lakalle2@gmail.com">
+        <input type="hidden" name="_from" value="ewilliamhe@gmail.com">
+        <div class="mb-4">
+            <label for="name" class="block text-left">Namn:</label>
+            <input type="text" id="name" name="name" class="w-full p-2 rounded bg-gray-700 text-white border border-orange-500" placeholder="Ditt namn" required>
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block text-left">E-post:</label>
+            <input type="email" id="email" name="email" class="w-full p-2 rounded bg-gray-700 text-white border border-orange-500" placeholder="Din e-post" required>
+        </div>
+        <div class="mb-4">
+            <label for="message" class="block text-left">Meddelande:</label>
+            <textarea id="message" name="message" class="w-full p-2 rounded bg-gray-700 text-white border border-orange-500" rows="4" placeholder="Ditt meddelande" required></textarea>
+        </div>
+        <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Skicka</button>
+    </form>
+</section>
 
     <section class="section text-center">
         <p>Jag återkommer med pris och så när boken släpps. Den är alldeles snart på gång.</p>
